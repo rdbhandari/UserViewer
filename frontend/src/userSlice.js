@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
+// action to fetch data from backend server
 export const fetchUserData = createAsyncThunk(
   "fetchUserData",
   async ({ currentPage, limit, query, sortBy, orderBy }) => {

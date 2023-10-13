@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
 });
 
 
-
+// hiting at root path
 app.get("/", function (req, res) {  
   let url = `https://jsonplaceholder.typicode.com/users?_page=${req.query._page}&_limit=${req.query._limit}&q=${req.query.q}&_sort=${req.query._sort}&_order=${req.query._order}`
     axios
@@ -28,9 +28,11 @@ app.get("/", function (req, res) {
   }
 );
 
+// avoding access to any other paths
 app.get("*", function (req, res) {
   res.status(404);
   res.send("Invalid Request");
 });
 
+// server listening at 3000 port
 app.listen(3000);

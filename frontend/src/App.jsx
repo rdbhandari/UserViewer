@@ -15,6 +15,7 @@ export default function App() {
   useEffect(() => {
     dispatch(fetchUserData({ currentPage, limit, query, sortBy, orderBy}));
   }, [dispatch, currentPage]);
+
   const data = useSelector((state) => state.user.userdata);
   const loading = useSelector((state) => state.user.isLoading);
   const totalCount = useSelector((state) => state.user.totalCount);
@@ -27,6 +28,7 @@ export default function App() {
           className="accordion accordion-flush m-5 border p-3 bg-light"
           id="user-accordion"
         >
+          {/* Search Form */}
           <form
             class="d-flex flex-sm-row flex-column"
             role="search"
@@ -51,6 +53,8 @@ export default function App() {
               Reset
             </button>
           </form>
+
+          {/* Sorting and Odering section */}
           <div className="d-flex justify-content-end align-items-center flex-sm-row flex-column ">
             <span>Sort By</span>
             <select class="form-select form-select-sm my-2 mx-sm-2 w-auto" value={sortBy} onChange={handleSortBy}>
@@ -68,6 +72,7 @@ export default function App() {
             {totalCount === 0 ? (
               <h2 className="text-center my-3">NO DATA FOUND</h2>
             ) : (
+              // Users data list section
               data.map((val) => (
                 <div className="accordion-item my-2 rounded-3" key={val.id}>
                   <div className="accordion-header">
@@ -145,6 +150,7 @@ export default function App() {
                 </div>
               ))
             )}
+            {/* Pagination  */}
             <Pagination
               totalCount={totalCount}
               limit={limit}
