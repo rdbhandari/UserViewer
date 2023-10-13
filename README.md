@@ -21,7 +21,7 @@ Introducing our user-friendly application that allows you to effortlessly access
     - Sort by Name, Username, Id
     - Order by Ascending or Descending
     - Pagination
-    - Erro Handling 
+    - Error Handling 
     - Responsive Design
 
 ## Getting Started
