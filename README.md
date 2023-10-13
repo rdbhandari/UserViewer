@@ -47,7 +47,7 @@ Introducing our user-friendly application that allows you to effortlessly access
         nodemon run index.js
         
     (Backend server runs at http://localhost:3000/)    
-4. Open another new terminal and navigate to the project directory (UserViewer)
+4. Now, open another NEW TERMINAL and navigate to the project directory (UserViewer)
 
         cd frontend
 
@@ -57,7 +57,7 @@ Introducing our user-friendly application that allows you to effortlessly access
         npm i 
         npm run dev
 
-6. Now visit the page where frontend server is running in my case (http://localhost:5173/)
+6. Now, visit the site where frontend server is running, in my case (http://localhost:5173/)
 
 
 
@@ -69,22 +69,22 @@ Upon launching the application, you will be presented with the home screen, wher
 
 HomePage
 
-![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS1.jpeg?raw=true)
+![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS1.png?raw=true)
 
 
 Searching user with keyword
 
-![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS2.jpeg?raw=true)
+![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS2.png?raw=true)
 
 Sorting by user name
 
-![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS3.jpeg?raw=true)
+![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS3.png?raw=true)
 
 View user's full details
 
-![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS3.jpeg?raw=true)
+![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS4.png?raw=true)
 
 
 In mobile screen
 
-![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS3.jpeg?raw=true)
+![Output Screen](https://github.com/rdbhandari/UserViewer/blob/main/OPSS5.png?raw=true)
